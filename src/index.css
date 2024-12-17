@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+    @import 'tailwindcss/components';
+    @import 'tailwindcss/utilities';
+
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .app.light {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .app.dark {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header.light {
+      background-color: #f8f9fa;
+    }
+
+    .header.dark {
+      background-color: #343a40;
+    }
+
+    .blog-list {
+      padding: 20px;
+    }
