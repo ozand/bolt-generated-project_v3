@@ -1,21 +1,18 @@
 import React from 'react';
+    import { Card, CardHeader, CardTitle, CardDescription, CardContent } from 'shadcn-ui';
 
-const PostCard = () => {
-  return (
-    <div className="post-card">
-      <img src="https://via.placeholder.com/150" alt="Post" />
-      <h3>Post Title</h3>
-      <p>Short description of the post...</p>
-      <div className="post-info">
-        <span>Author Name</span>
-        <div className="interactions">
-          <button>Like</button>
-          <button>Comment</button>
-          <button>Save</button>
-        </div>
-      </div>
-    </div>
-  );
-};
+    const PostCard = ({ post, className }) => {
+      return (
+        <Card className={className}>
+          <CardHeader>
+            <CardTitle>{post.title}</CardTitle>
+            <CardDescription>{post.author}</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>{post.excerpt}</p>
+          </CardContent>
+        </Card>
+      );
+    };
 
-export default PostCard;
+    export default PostCard;
